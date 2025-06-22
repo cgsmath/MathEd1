@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -21,24 +20,34 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2em;
     }
     main {
       max-width: 1000px;
       margin: 2em auto;
       padding: 0 2em;
     }
-    section {
-      margin-bottom: 2.5em;
-    }
     h2 {
-      font-size: 1.5em;
       color: #003366;
       border-bottom: 2px solid #003366;
       padding-bottom: 0.3em;
     }
-    ul {
-      padding-left: 1.2em;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2em;
+    }
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 0.75em;
+      text-align: left;
+    }
+    th {
+      background-color: #003366;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f1f1f1;
     }
     footer {
       background-color: #f1f1f1;
@@ -48,19 +57,6 @@
       padding: 2em 1em;
       margin-top: 4em;
     }
-    .highlight {
-      background-color: #e9f0fb;
-      padding: 1em;
-      border-left: 4px solid #0056b3;
-      margin-bottom: 2em;
-    }
-    a {
-      color: #003366;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
@@ -68,53 +64,47 @@
     <h1>초등수학교육의 이해</h1>
   </header>
   <main>
-    <section>
-      <h2>소개</h2>
-      <p>이 웹사이트는 기초 수리력 함양을 위한 연구 프로젝트의 정보를 제공합니다. 본 연구는 초등학생을 대상으로 수학적 사고력과 문제 해결 능력을 기르는 데 목적이 있습니다.</p>
-    </section>
-
-    <section>
-      <h2>강의 정보</h2>
-      <div class="highlight">
-        <p><strong>강의명:</strong> 초등수학교육의 이해<br>
-        <strong>담당교수:</strong> 송창근<br>
-        <strong>이메일:</strong> <a href="mailto:cgsong@cje.ac.kr">cgsong@cje.ac.kr</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2>주요 주제</h2>
-      <ul>
-        <li>수리력의 정의와 구성 요소</li>
-        <li>문제 해결과 추론 중심의 수학 학습</li>
-        <li>수학적 표현력과 의사소통 능력</li>
-        <li>평가 도구 설계와 진단 기준</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>과제 및 실습</h2>
-      <p>매주 실습 과제가 제공되며, 학생들은 다양한 수학적 상황에 대한 모델링과 해석을 통해 역량을 기르게 됩니다. 주요 과제 주제는 아래와 같습니다:</p>
-      <ul>
-        <li>수학적 게임 기반 과제 설계</li>
-        <li>문제 상황의 시각적 모델링</li>
-        <li>학생 반응 분석 및 평가</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>참고 자료</h2>
-      <ul>
-        <li><a href="#">OECD 수리력 보고서 (PDF)</a></li>
-        <li><a href="#">기초 수리력 진단 도구 샘플</a></li>
-        <li><a href="#">관련 교육 정책 및 연구 문헌</a></li>
-      </ul>
-    </section>
+    <h2>강의 주차별 안내</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>주차</th>
+          <th>강의 주제</th>
+          <th>학습 자료</th>
+          <th>과제</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1주차</td>
+          <td>오리엔테이션 및 초등수학 개관</td>
+          <td><a href="#">강의자료.pdf</a></td>
+          <td>자기소개서 제출</td>
+        </tr>
+        <tr>
+          <td>2주차</td>
+          <td>수학 교과의 성격과 목표</td>
+          <td><a href="#">강의자료.pdf</a></td>
+          <td>교육과정 분석 과제</td>
+        </tr>
+        <tr>
+          <td>3주차</td>
+          <td>수학적 사고와 교수학적 관점</td>
+          <td><a href="#">슬라이드.pptx</a></td>
+          <td>사례 탐색 보고서</td>
+        </tr>
+        <tr>
+          <td>4주차</td>
+          <td>문제 해결 중심의 수업 설계</td>
+          <td><a href="#">참고자료.zip</a></td>
+          <td>수업안 설계 초안</td>
+        </tr>
+        <!-- 추가 주차는 필요에 따라 이어서 작성 -->
+      </tbody>
+    </table>
   </main>
-
   <footer>
-    &copy; 2025 기초 수리력 연구팀 — 모든 권리 보유
+    &copy; 2025 PME2 프로젝트 팀 — 모든 권리 보유
   </footer>
 </body>
 </html>
-
