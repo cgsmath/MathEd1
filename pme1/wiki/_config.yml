@@ -1,0 +1,11 @@
+
+title: PME1 위키
+description: "PME1 과목을 위한 위키 문서입니다."
+theme: just-the-docs
+color_scheme: light
+
+url: "https://cgsmath.github.io/pme/pme1/wiki"
+baseurl: "/pme/pme1/wiki"
+
+aux_links:
+  GitHub Repository: https://github.com/cgsmath/pme
