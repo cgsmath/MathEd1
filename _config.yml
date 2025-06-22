@@ -1,3 +1,17 @@
-title: PME2 위키
+title: PME 위키
+description: 현대수학의 융합적 이해 - 위키 스타일 자료
 theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 color_scheme: light
+
+# 아래 설정은 선택
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/favicon.ico"
+
+# 페이지 기본 정보
+url: "https://cgsmath.github.io"
+baseurl: "/pme" # 리포지토리 이름
+
+# 네비게이션 구성
+aux_links:
+  GitHub Repo: https://github.com/cgsmath/pme
