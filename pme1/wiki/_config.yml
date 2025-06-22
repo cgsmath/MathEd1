@@ -1,0 +1,7 @@
+title: PME1 위키
+baseurl: "/pme/pme1/wiki"
+theme: just-the-docs
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
