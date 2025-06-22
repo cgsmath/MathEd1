@@ -4,12 +4,3 @@ theme: just-the-docs
 
 # 위키 페이지 기본 경로 설정 (서브폴더에 있을 경우)
 baseurl: "/pme/pme1/wiki"
-
-# 사이드바 탐색 파일 설정 (선택사항)
-# 이건 _data/navigation.yml 파일을 사용할 수 있도록 지정
-just_the_docs:
-  collections:
-    docs:
-      name: "문서"
-      nav_fold: true
-      permalink: "/:path/"
