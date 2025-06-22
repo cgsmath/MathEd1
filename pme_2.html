@@ -64,14 +64,13 @@
     <h1>초등수학교육의 이해</h1>
   </header>
   <main>
-    <h2>온라인 강의 교재</h2>
     <h2><a href="#" onclick="checkPassword()">온라인 강의 교재</a></h2>
 
 <script>
   function checkPassword() {
     const password = prompt("비밀번호를 입력하세요:");
     if (password === "1234") {
-      window.location.href = "wikidocs.html"; // 실제 파일명으로 변경 가능
+      window.location.href = "/pme/pme2/wiki/";
     } else if (password !== null) {
       alert("비밀번호가 올바르지 않습니다.");
     }
