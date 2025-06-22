@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRUST 게임</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 2em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+    .btn {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TRUST 게임</h1>
+    <div id="game">
+      <p class="question">상대에게 얼마를 보낼까요? (총 보유 금액: 100)</p>
+      <button class="btn" onclick="submitChoice(0)">0</button>
+      <button class="btn" onclick="submitChoice(25)">25</button>
+      <button class="btn" onclick="submitChoice(50)">50</button>
+      <button class="btn" onclick="submitChoice(75)">75</button>
+      <button class="btn" onclick="submitChoice(100)">100</button>
+    </div>
+    <div id="result" style="display:none; margin-top:2em;"></div>
+  </div>
+
+  <script>
+    function submitChoice(amount) {
+      const resultDiv = document.getElementById("result");
+      document.getElementById("game").style.display = "none";
+      resultDiv.style.display = "block";
+      resultDiv.innerHTML = `<p>당신은 ${amount}원을 보냈습니다. 상대방은 몇 배로 돌려줄까요?</p>`;
+      // 여기서 실제 백엔드와 연결하거나 로컬 저장 가능
+    }
+  </script>
+</body>
+</html>
