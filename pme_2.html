@@ -64,18 +64,21 @@
     <h1>초등수학교육의 이해</h1>
   </header>
   <main>
-    <h2><a href="#" onclick="checkPassword()">온라인 강의 교재</a></h2>
-
-<script>
-  function checkPassword() {
-    const password = prompt("비밀번호를 입력하세요:");
-    if (password === "1234") {
-      window.location.href = "/pme/pme2/wiki/";
-    } else if (password !== null) {
-      alert("비밀번호가 올바르지 않습니다.");
-    }
-  }
-</script>
+    <h2>온라인 강의 교재</h2>
+    <p style="margin-top: -0.5em; margin-bottom: 2em;">
+      <a href="#" onclick="checkPassword()" style="font-size: 0.95em; color: #003366; text-decoration: underline;">보기</a>
+    </p>
+    
+    <script>
+      function checkPassword() {
+        const password = prompt("비밀번호를 입력하세요:");
+        if (password === "1234") {
+          window.location.href = "/pme/pme2/wiki/";
+        } else if (password !== null) {
+          alert("비밀번호가 올바르지 않습니다.");
+        }
+      }
+    </script>
     <h2>강의 주차별 안내</h2>
     <table>
       <thead>
