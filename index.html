@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TRUST 게임</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기초 수리력 연구</title>
   <style>
     body {
       font-family: "Helvetica Neue", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #f8f9fa;
+      color: #212529;
     }
     header {
       background-color: #003366;
@@ -20,90 +21,101 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
     }
     main {
-      max-width: 800px;
-      margin: 3em auto;
-      padding: 2em;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 2em;
     }
     section {
-      margin-bottom: 2em;
+      margin-bottom: 2.5em;
     }
     h2 {
-      border-left: 4px solid #003366;
-      padding-left: 0.5em;
-      font-size: 1.4em;
-      margin-bottom: 0.5em;
+      font-size: 1.5em;
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3em;
     }
-    p {
-      line-height: 1.6;
-    }
-    .btn-group {
-      margin-top: 1.5em;
-    }
-    .btn {
-      display: inline-block;
-      margin: 0.5em;
-      padding: 0.75em 1.5em;
-      font-size: 1em;
-      cursor: pointer;
-      border: none;
-      background-color: #4CAF50;
-      color: white;
-      border-radius: 5px;
-    }
-    .btn:hover {
-      background-color: #45a049;
+    ul {
+      padding-left: 1.2em;
     }
     footer {
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9em;
       text-align: center;
       padding: 2em 1em;
-      font-size: 0.9em;
-      color: #777;
+      margin-top: 4em;
+    }
+    .highlight {
+      background-color: #e9f0fb;
+      padding: 1em;
+      border-left: 4px solid #0056b3;
+      margin-bottom: 2em;
+    }
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>TRUST 실험 게임</h1>
+    <h1>기초 수리력 연구 프로젝트</h1>
   </header>
   <main>
     <section>
-      <h2>게임 소개</h2>
-      <p>이 TRUST 게임은 경제적 선택과 신뢰를 탐색하는 간단한 실험입니다. 아래의 선택지를 통해 상대에게 보내고 싶은 금액을 선택해 주세요.</p>
+      <h2>소개</h2>
+      <p>이 웹사이트는 기초 수리력 함양을 위한 연구 프로젝트의 정보를 제공합니다. 본 연구는 초등학생을 대상으로 수학적 사고력과 문제 해결 능력을 기르는 데 목적이 있습니다.</p>
     </section>
 
-    <section id="game">
-      <h2>금액 선택</h2>
-      <p>상대에게 얼마를 보낼까요? (총 보유 금액: 100)</p>
-      <div class="btn-group">
-        <button class="btn" onclick="submitChoice(0)">0</button>
-        <button class="btn" onclick="submitChoice(25)">25</button>
-        <button class="btn" onclick="submitChoice(50)">50</button>
-        <button class="btn" onclick="submitChoice(75)">75</button>
-        <button class="btn" onclick="submitChoice(100)">100</button>
+    <section>
+      <h2>강의 정보</h2>
+      <div class="highlight">
+        <p><strong>강의명:</strong> 기초 수리력의 이해<br>
+        <strong>학기:</strong> 2025년 1학기<br>
+        <strong>담당교수:</strong> 송창근<br>
+        <strong>이메일:</strong> <a href="mailto:songcg@example.com">songcg@example.com</a></p>
       </div>
     </section>
 
-    <section id="result" style="display:none;">
+    <section>
+      <h2>주요 주제</h2>
+      <ul>
+        <li>수리력의 정의와 구성 요소</li>
+        <li>문제 해결과 추론 중심의 수학 학습</li>
+        <li>수학적 표현력과 의사소통 능력</li>
+        <li>평가 도구 설계와 진단 기준</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>과제 및 실습</h2>
+      <p>매주 실습 과제가 제공되며, 학생들은 다양한 수학적 상황에 대한 모델링과 해석을 통해 역량을 기르게 됩니다. 주요 과제 주제는 아래와 같습니다:</p>
+      <ul>
+        <li>수학적 게임 기반 과제 설계</li>
+        <li>문제 상황의 시각적 모델링</li>
+        <li>학생 반응 분석 및 평가</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>참고 자료</h2>
+      <ul>
+        <li><a href="#">OECD 수리력 보고서 (PDF)</a></li>
+        <li><a href="#">기초 수리력 진단 도구 샘플</a></li>
+        <li><a href="#">관련 교육 정책 및 연구 문헌</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 TRUST 실험 프로젝트
+    &copy; 2025 기초 수리력 연구팀 — 모든 권리 보유
   </footer>
-
-  <script>
-    function submitChoice(amount) {
-      const resultDiv = document.getElementById("result");
-      document.getElementById("game").style.display = "none";
-      resultDiv.style.display = "block";
-      resultDiv.innerHTML = `<h2>결과</h2><p>당신은 ${amount}원을 보냈습니다. 상대방은 몇 배로 돌려줄까요?</p>`;
-    }
-  </script>
 </body>
 </html>
 
